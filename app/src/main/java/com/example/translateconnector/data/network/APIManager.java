@@ -24,7 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class APIManager {
 
     private static APIManager mInstance;
-    public TranlookAPI tranlookAPI;
+    public TranLookAPI tranLookAPI;
     private Context context;
 
     private static final int RETROFIT_TIMEOUT = 60 * 1000;
@@ -63,7 +63,7 @@ public class APIManager {
         builder.addConverterFactory(GsonConverterFactory
                 .create(gson));
         Retrofit retrofit = builder.build();
-        tranlookAPI = retrofit.create(TranlookAPI.class);
+        tranLookAPI = retrofit.create(TranLookAPI.class);
     }
 
     private Headers getJsonHeaders() {

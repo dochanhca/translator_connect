@@ -38,6 +38,7 @@ android {
     }
     buildFeatures {
         compose true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion '1.1.1'
@@ -67,11 +68,13 @@ dependencies {
     implementation "com.google.code.gson:gson:2.11.0"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
 
     // Dependency Injection
     implementation "com.google.dagger:hilt-android:$hilt_version"
     ksp "com.google.dagger:hilt-compiler:$hilt_version"
-    implementation 'androidx.hilt:hilt-navigation-compose:1.1.0'
+    implementation 'androidx.hilt:hilt-navigation-compose:1.2.0'
 
     //test
     testImplementation 'junit:junit:4.13.2'
