@@ -1,5 +1,6 @@
 package com.example.translateconnector.data.model
 
+import com.example.translateconnector.domain.entity.UserEntity
 import com.google.gson.annotations.SerializedName
 
 data class UserModel(
@@ -40,3 +41,11 @@ data class UserModel(
     @SerializedName("url")
     val url: String
 )
+
+fun UserModel.toEntity() : UserEntity {
+    return UserEntity(
+        userId = id.toString(),
+        avatar = avatarUrl,
+        name = login,
+    )
+}

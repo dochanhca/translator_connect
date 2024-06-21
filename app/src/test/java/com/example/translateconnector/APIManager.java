@@ -1,9 +1,10 @@
-package com.example.translateconnector.data.network;
+package com.example.translateconnector;
 
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.example.translateconnector.data.network.TranLookAPI;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.imoktranslator.utils.LocalSharedPreferences;

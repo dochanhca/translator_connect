@@ -1,4 +1,4 @@
-package com.example.translateconnector.data.network;
+package com.example.translateconnector;
 
 import com.imoktranslator.BuildConfig;
 
