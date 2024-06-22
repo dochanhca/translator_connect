@@ -1,9 +1,10 @@
-package com.example.translateconnector.data.network;
+package com.example.translateconnector;
 
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.example.translateconnector.data.network.TranLookAPI;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.imoktranslator.utils.LocalSharedPreferences;
@@ -24,7 +25,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class APIManager {
 
     private static APIManager mInstance;
-    public TranlookAPI tranlookAPI;
+    public TranLookAPI tranLookAPI;
     private Context context;
 
     private static final int RETROFIT_TIMEOUT = 60 * 1000;
@@ -63,7 +64,7 @@ public class APIManager {
         builder.addConverterFactory(GsonConverterFactory
                 .create(gson));
         Retrofit retrofit = builder.build();
-        tranlookAPI = retrofit.create(TranlookAPI.class);
+        tranLookAPI = retrofit.create(TranLookAPI.class);
     }
 
     private Headers getJsonHeaders() {
