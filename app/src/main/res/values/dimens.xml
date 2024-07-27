@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tiny_margin_padding">2dp</dimen>
+    <dimen name="small_margin_padding">5dp</dimen>
+    <dimen name="common_margin_padding">10dp</dimen>
+    <dimen name="x_common_margin_padding">15dp</dimen>
+    <dimen name="large_margin_padding">20dp</dimen>
+    <dimen name="extra_margin_padding">30dp</dimen>
+
+    <dimen name="common_corner_radius">8dp</dimen>
+    <dimen name="add_friend_corner_radius">120dp</dimen>
+
+    <!--text size-->
+    <dimen name="text_tiny">11sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_common">13sp</dimen>
+    <dimen name="text_normal">14sp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_extra">24sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+
+    <dimen name="text_field_common_padding">12dp</dimen>
+    <dimen name="text_field_common_padding_left">17dp</dimen>
+    <dimen name="text_field_common_h">40dp</dimen>
+
+    <dimen name="margin_padding_37">37dp</dimen>
+    <dimen name="margin_padding_35">35dp</dimen>
+    <dimen name="margin_padding_60">60dp</dimen>
+    <dimen name="margin_padding_105">105dp</dimen>
+    <dimen name="margin_padding_12">12dp</dimen>
+    <dimen name="margin_padding_13">13dp</dimen>
+
+    <dimen name="divider_line_h">0.5dp</dimen>
+    <dimen name="view_header_height">50dp</dimen>
+    <dimen name="view_header_icon_size">18dp</dimen>
+    <dimen name="common_border_width">1dp</dimen>
+    <dimen name="navi_value_box_size">15dp</dimen>
+    <dimen name="side_menu_avatar_size">70dp</dimen>
+    <dimen name="rating_bar_size">17dp</dimen>
+    <dimen name="rating_bar_w">150dp</dimen>
+    <dimen name="description_field_h">100dp</dimen>
+    <dimen name="btn_sort_order_h">24dp</dimen>
+    <dimen name="btn_action_w">152dp</dimen>
+    <dimen name="user_review_screen_margin_padding_vertical">30dp</dimen>
+    <dimen name="user_review_rating_bar_margin_top">15dp</dimen>
+    <dimen name="user_review_margin_horizontal">10dp</dimen>
+
+    <dimen name="user_avatar_size_small">40dp</dimen>
+    <dimen name="max_img_chat_size">200dp</dimen>
+    <dimen name="min_img_chat_size">100dp</dimen>
+    <dimen name="emoji_icon_size">20sp</dimen>
+    <dimen name="user_avatar_size">70dp</dimen>
+    <dimen name="order_statistic_h">20dp</dimen>
+    <dimen name="new_feed_image_h">182dp</dimen>
+    <dimen name="max_img_comment_h">250dp</dimen>
+    <dimen name="comment_image_size_small">80dp</dimen>
+    <dimen name="video_view_h">300dp</dimen>
+    <dimen name="audio_view_h">120dp</dimen>
+    <dimen name="max_message_w">250dp</dimen>
+</resources>

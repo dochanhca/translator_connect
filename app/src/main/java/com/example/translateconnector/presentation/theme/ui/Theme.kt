@@ -13,16 +13,17 @@ import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
+import androidx.compose.ui.unit.sp
 import androidx.core.view.ViewCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
+    primary = colorPrimary,
     secondary = PurpleGrey80,
     tertiary = Pink80
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
+    primary = colorPrimary,
     secondary = PurpleGrey40,
     tertiary = Pink40
 
@@ -60,9 +61,38 @@ fun TranslateConnectorTheme(
         }
     }
 
+    val currentTypography = MaterialTheme.typography
+    val customTypography = currentTypography.copy(
+        labelSmall = currentTypography.labelSmall.copy(
+            color = textGrey,
+            fontSize = 11.sp
+        ),
+        labelMedium = currentTypography.labelMedium.copy(
+            color = textGrey,
+            fontSize = 12.sp
+        ),
+        labelLarge = currentTypography.labelLarge.copy(
+            color = textGrey,
+            fontSize = 14.sp
+        ),
+        titleMedium = currentTypography.titleMedium.copy(
+            color = textGrey,
+            fontSize = 16.sp
+        ),
+        titleLarge = currentTypography.titleLarge.copy(
+            color = textGrey,
+            fontSize = 18.sp
+        ),
+        headlineSmall = currentTypography.headlineSmall.copy(
+            color = textGrey,
+            fontSize = 24.sp
+        ),
+
+    )
+
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = customTypography,
         content = content
     )
 }

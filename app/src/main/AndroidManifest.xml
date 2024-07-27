@@ -17,7 +17,7 @@
         android:theme="@style/Theme.TranslateConnector"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.screen.MainActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.TranslateConnector">
             <intent-filter>
