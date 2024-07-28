@@ -44,7 +44,7 @@ data class UserModel(
 
 fun UserModel.toEntity() : UserEntity {
     return UserEntity(
-        userId = id.toString(),
+        id = id,
         avatar = avatarUrl,
         name = login,
     )

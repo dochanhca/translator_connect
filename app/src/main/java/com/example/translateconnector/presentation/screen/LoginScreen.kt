@@ -122,7 +122,7 @@ fun LoginBody() {
 
         Button(
             onClick = {
-                /* TODO implement login */
+                viewModel.login()
             },
             modifier = Modifier.wrapContentWidth(),
             colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary),
