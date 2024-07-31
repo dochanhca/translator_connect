@@ -1,3 +1,762 @@
 <resources>
-    <string name="app_name">TranslateConnector</string>
+    <string name="google_maps_key" translatable="false">AIzaSyBAwr24ZES1VYrU3pBcGdDKoywy0sWFHHs</string>
+    <string name="facebook_app_id" translatable="false">774988892832217</string>
+
+    <string-array name="menu_item">
+        <item>@string/MH21_012</item>
+        <item>@string/MH21_003</item>
+        <item>@string/MH21_013</item>
+        <item>@string/MH21_005</item>
+        <item>@string/MH21_006</item>
+        <item>@string/MH21_007</item>
+        <item>@string/MH21_008</item>
+        <item>@string/MH21_011</item>
+    </string-array>
+
+    <string-array name="arr_language">
+        <item>@string/MH09_044</item>
+        <item>@string/MH09_045</item>
+        <item>@string/MH09_046</item>
+        <item>@string/MH09_047</item>
+        <item>@string/MH09_048</item>
+        <item>@string/MH09_049</item>
+        <item>@string/MH09_050</item>
+        <item>@string/MH09_051</item>
+        <item>@string/MH09_052</item>
+    </string-array>
+
+    <string-array name="arr_setting_lang">
+        <item>@string/MH09_044</item>
+        <item>@string/MH09_045</item>
+        <item>@string/MH09_046</item>
+        <item>@string/MH09_047</item>
+        <item>@string/MH09_048</item>
+        <item>@string/MH09_049</item>
+    </string-array>
+
+    <string-array name="arr_lang_code">
+        <item>vi</item>
+        <item>en</item>
+        <item>zh</item>
+        <item>ja</item>
+        <item>fr</item>
+        <item>ko</item>
+    </string-array>
+
+    <string-array name="arr_experience">
+        <item>@string/MH09_039</item>
+        <item>@string/MH09_040</item>
+        <item>@string/MH09_041</item>
+        <item>@string/MH09_042</item>
+    </string-array>
+
+    <string-array name="arr_gender">
+        <item>@string/MH11_019</item>
+        <item>@string/MH11_020</item>
+        <item>@string/MH11_007</item>
+    </string-array>
+
+    <string-array name="arr_gender_order">
+        <item>@string/MH11_019</item>
+        <item>@string/MH11_020</item>
+        <item>@string/MH23_017</item>
+    </string-array>
+
+    <string-array name="arr_translation_type">
+        <item>@string/MH11_031</item>
+        <item>@string/MH11_032</item>
+        <item>@string/MH11_033</item>
+    </string-array>
+
+    <string-array name="graduation_type">
+        <item>@string/MH09_053</item>
+        <item>@string/MH09_054</item>
+        <item>@string/MH09_055</item>
+        <item>@string/MH09_056</item>
+        <item>@string/MH09_057</item>
+    </string-array>
+
+    <string-array name="arr_currency">
+        <item>USD</item>
+        <item>SGD</item>
+        <item>VND</item>
+        <item>JPY</item>
+        <item>TWD</item>
+    </string-array>
+
+    <string-array name="arr_image_options">
+        <item>@string/MH24_004</item>
+        <item>@string/MH10_027</item>
+        <item>@string/MH28_015</item>
+        <item>@string/MH28_016</item>
+    </string-array>
+
+    <string-array name="arr_friend_options">
+        <item>@string/MH78_001</item>
+        <item>@string/MH78_002</item>
+        <item>@string/MH27_007</item>
+        <item>@string/MH63_005</item>
+    </string-array>
+
+    <string-array name="arr_best_friend_options">
+        <item>@string/MH78_001</item>
+        <item>@string/MH78_003</item>
+        <item>@string/MH27_007</item>
+        <item>@string/MH63_005</item>
+    </string-array>
+
+    <string name="app_name" translatable="false">iMOk Translator</string>
+    <string name="symbol_asterisk" translatable="false">*</string>
+
+    <string name="MH01_001">Bắt đầu</string>
+    <string name="MH02_001">Đăng ký</string>
+    <string name="MH02_002">Số điện thoại</string>
+    <string name="MH02_003">Họ tên</string>
+    <string name="MH02_004">Mật khẩu</string>
+    <string name="MH02_005">Nhập lại mật khẩu</string>
+    <string name="MH02_006">Kích hoạt tài khoản</string>
+    <string name="MH02_007">Bạn đã có tài khoản</string>
+    <string name="MH02_008">Địa chỉ email</string>
+    <string name="MH02_009">Xác nhận</string>
+    <string name="MH03_001">Xác nhận tài khoản</string>
+    <string name="MH03_002">Mã OTP</string>
+    <string name="MH03_003">Xác minh</string>
+    <string name="MH03_004">Lấy mã OTP</string>
+
+
+    <string name="MH04_001">Ảnh đại diện</string>
+    <string name="MH04_002">Ảnh bìa</string>
+    <string name="MH04_003">Biên/Phiên dịch</string>
+    <string name="MH04_004">Mã QR code</string>
+    <string name="MH04_005">Họ tên</string>
+    <string name="MH04_006">Số điện thoại</string>
+    <string name="MH04_007">Quốc gia</string>
+    <string name="MH04_008">Chứng minh thư/ hộ chiếu</string>
+    <string name="MH04_009">Năm sinh</string>
+    <string name="MH04_010">Giới tính</string>
+    <string name="MH04_011">Email</string>
+    <string name="MH04_012">Địa chỉ</string>
+    <string name="MH04_013">Lưu</string>
+    <string name="MH04_014">Chụp ảnh</string>
+    <string name="MH04_015">Tải ảnh</string>
+    <string name="MH04_016">Đăng ký Translator</string>
+    <string name="MH04_017">Hoặc</string>
+
+
+    <string name="MH05_001">Đăng nhập</string>
+    <string name="MH05_002">Số điện thoại</string>
+    <string name="MH05_003">Mật khẩu</string>
+    <string name="MH05_004">Đăng nhập</string>
+    <string name="MH05_005">Quên mật khẩu ?</string>
+    <string name="MH05_006">Đăng ký tài khoản</string>
+    <string name="MH05_007">Chọn quốc gia</string>
+    <string name="MH05_008">Mật khẩu hiện tại</string>
+    <string name="MH05_009">Mật khẩu mới</string>
+    <string name="MH05_010">Nhập lại mật khẩu mới</string>
+    <string name="MH05_011">Đổi mật khẩu</string>
+    <string name="MH06_001">Quên mật khẩu</string>
+    <string name="MH06_002">Chọn</string>
+    <string name="MH06_003">Chọn đầu số</string>
+    <string name="MH06_004">Số điện thoại</string>
+    <string name="MH06_005">Email</string>
+    <string name="MH06_006">Gửi</string>
+    <string name="MH06_007">Hủy</string>
+    <string name="MH06_008">Xin nhập số điện thoại hoặc email đăng ký:</string>
+    <string name="MH06_009">Xin nhập số điện thoại và email đăng ký:</string>
+    <string name="MH07_001">Nhập mã bảo mật</string>
+    <string name="MH07_002">Mã bảo mật</string>
+    <string name="MH07_003">Truy cập</string>
+    <string name="MH07_004">Lấy mã bảo mật</string>
+    <string name="MH08_001">Tìm kiếm</string>
+    <string name="MH08_002">Số đơn hàng đã đặt</string>
+    <string name="MH08_003">Số đơn đơn đặt hàng đã hủy</string>
+    <string name="MH08_004">Xem thêm</string>
+    <string name="MH08_005">Biên/Phiên dịch</string>
+    <string name="MH08_006">Bạn đang nghĩ gì?</string>
+    <string name="MH08_007">Giờ trước</string>
+    <string name="MH09_001">Biên/Phiên dịch</string>
+    <string name="MH09_002">Họ tên</string>
+    <string name="MH09_003">Số điện thoại</string>
+    <string name="MH09_004">Quốc gia</string>
+    <string name="MH09_005">Chứng minh thư/ hộ chiếu</string>
+    <string name="MH09_006">Năm sinh</string>
+    <string name="MH09_007">Giới tính</string>
+    <string name="MH09_008">Nam</string>
+    <string name="MH09_009">Nữ</string>
+    <string name="MH09_010">Email</string>
+    <string name="MH09_011">đia chỉ</string>
+    <string name="MH09_012">Khu vực biên dịch</string>
+    <string name="MH09_013">Trường tốt nghiệp</string>
+    <string name="MH09_014">Ngôn ngữ bản địa</string>
+    <string name="MH09_015">Ngôn ngữ phiên dịch</string>
+    <string name="MH09_016">Loại tốt nghiệp</string>
+    <string name="MH09_017">Năm tốt nghiệp</string>
+    <string name="MH09_018">Chứng chỉ( nếu có)</string>
+    <string name="MH09_019">Số năm kinh nghiệm</string>
+    <string name="MH09_020">Tệp tin xác minh</string>
+    <string name="MH09_021">%1s tệp đã chọn</string>
+    <string name="MH09_022">Chú thích</string>
+    <string name="MH09_023">Đăng ký</string>
+    <string name="MH09_024">Hủy</string>
+    <string name="MH09_025">Giới thiệu bản thân</string>
+    <string name="MH09_032">Thêm ngôn ngữ</string>
+
+    <string name="MH10_001">Tìm kiếm</string>
+    <string name="MH10_002">Biên/Phiên dịch</string>
+    <string name="MH10_003">Số đơn hàng đã đặt</string>
+    <string name="MH10_004">Số đơn hàng đã hủy</string>
+    <string name="MH10_005">Mã QR code</string>
+    <string name="MH10_006">Họ tên</string>
+    <string name="MH10_007">Số điện thoại</string>
+    <string name="MH10_008">Quốc gia</string>
+    <string name="MH10_009">Mật khẩu</string>
+    <string name="MH10_010">Chứng minh thư/ hộ chiếu</string>
+    <string name="MH10_011">Năm sinh</string>
+    <string name="MH10_012">Giới tính</string>
+    <string name="MH10_013">Nam</string>
+    <string name="MH10_014">Nữ</string>
+    <string name="MH10_015">Email</string>
+    <string name="MH10_016">địa chỉ</string>
+    <string name="MH10_017">Lưu</string>
+    <string name="MH10_018">Thông tin cá nhân</string>
+    <string name="MH10_019">Mã QRcode</string>
+    <string name="MH10_020">Đăng ký Translator</string>
+    <string name="MH10_021">Đổi mật khẩu</string>
+    <string name="MH10_022">Chỉ mình bạn có thể xem thông tin này</string>
+    <string name="MH10_023">Hoặc</string>
+    <string name="MH10_024">Hủy</string>
+    <string name="MH10_025">Xem ảnh đại diện</string>
+    <string name="MH10_026">Chụp ảnh mới</string>
+    <string name="MH10_027">Chọn ảnh có sẵn</string>
+    <string name="MH10_028">Xoá</string>
+    <string name="MH10_029">Bạn thực sự muốn xóa ảnh này?</string>
+    <string name="MH10_030">Bạn có chắc chắn muốn hủy?</string>
+    <string name="MH10_031">Thông tin chưa được lưu, bạn có muốn rời đi?</string>
+
+    <string name="MH11_001">Tạo đơn hàng</string>
+    <string name="MH11_002">Tên đơn hàng</string>
+    <string name="MH11_003">Ngôn ngữ cần phiên dịch</string>
+    <string name="MH11_004">Loại phiên dịch</string>
+    <string name="MH11_005">Địa điểm</string>
+    <string name="MH11_006">Chọn trên bản đồ</string>
+    <string name="MH11_007">Khác</string>
+    <string name="MH11_008">Quốc gia</string>
+    <string name="MH11_009">Thành phố</string>
+    <string name="MH11_010">Nhập địa chỉ</string>
+    <string name="MH11_011">Thời gian</string>
+    <string name="MH11_012">Từ ngày</string>
+    <string name="MH11_013">Đến</string>
+    <string name="MH11_014">Từ giờ</string>
+    <string name="MH11_015">Đến</string>
+    <string name="MH11_016">Số năm kinh nghiệm</string>
+    <string name="MH11_017">Độ tuổi</string>
+    <string name="MH11_018">Giới tính</string>
+    <string name="MH11_019">Nam</string>
+    <string name="MH11_020">Nữ</string>
+    <string name="MH11_021">Thời hạn đăng tin</string>
+    <string name="MH11_022">Ngày</string>
+    <string name="MH11_023">Giờ</string>
+    <string name="MH11_024">Chất lượng từ</string>
+    <string name="MH11_025">Mô tả công việc</string>
+    <string name="MH11_026">Tạo đơn</string>
+    <string name="MH11_027">Hủy</string>
+    <string name="MH12_001">Danh sách báo giá</string>
+    <string name="MH12_002">Chi tiết đơn hàng</string>
+    <string name="MH12_003">Giá</string>
+    <string name="MH12_004">đã báo giá đơn hàng</string>
+    <string name="MH12_005">Theo giá</string>
+    <string name="MH12_006">Theo Thời gian</string>
+    <string name="MH12_007">Theo Chất lượng Biên/Phiên dịch</string>
+    <string name="MH12_008">Đồng ý</string>
+    <string name="MH12_009">Hủy</string>
+    <string name="MH13_001">Biên/Phiên dịch</string>
+    <string name="MH13_002">Đơn hàng đã báo giá</string>
+    <string name="MH13_003">Đơn hàng báo giá thành công</string>
+    <string name="MH13_004">Quay lại đơn hàng</string>
+    <string name="MH13_005">Lịch sử tin nhắn</string>
+    <string name="MH13_006">Chi tiết đơn hàng</string>
+    <string name="MH13_007">đã báo giá cho đơn hàng</string>
+    <string name="MH13_008">Giờ trước</string>
+    <string name="MH13_009">Nhập…</string>
+    <string name="MH15_001">đơn hàng</string>
+    <string name="MH15_002">Giờ trước</string>
+    <string name="MH16_001">đánh giá Biên/Phiên dịch</string>
+    <string name="MH16_002">Vote sao</string>
+    <string name="MH16_003">Thái độ</string>
+    <string name="MH16_004">Giá</string>
+    <string name="MH16_005">Kỹ năng</string>
+    <string name="MH16_006">Chuyên môn</string>
+    <string name="MH16_007">Mô tả</string>
+    <string name="MH16_008">Hoàn tất</string>
+    <string name="MH17_001">Thông báo đơn hàng</string>
+    <string name="MH17_002">Đã trả lời tin nhắn cho đơn hàng</string>
+    <string name="MH17_003">Đã báo giá</string>
+    <string name="MH17_004">24 phút trước</string>
+    <string name="MH17_005">Xóa</string>
+    <string name="MH18_001">Tin nhắn</string>
+    <string name="MH18_002">đã gửi một ảnh tới</string>
+    <string name="MH18_003">gửi tin nhắn mới</string>
+    <string name="MH18_004">Xóa</string>
+    <string name="MH19_001">Lời mời kết bạn</string>
+    <string name="MH19_002">Hủy</string>
+    <string name="MH19_003">Chấp nhận</string>
+    <string name="MH19_004">bạn chung</string>
+    <string name="MH19_005">muốn kết bạn với bạn</string>
+    <string name="MH19_006">hiện bạn và %1$s đã là bạn bè</string>
+    <string name="MH19_007">Thông báo chung</string>
+    <string name="MH19_008">Mới:</string>
+    <string name="MH19_009">Cũ hơn:</string>
+    <string name="MH20_001">Thông báo</string>
+    <string name="MH20_002">Bình luận bài viết của bạn</string>
+    <string name="MH20_003">Đăng tải khuyến mãi mới</string>
+    <string name="MH20_004">Đã thích bài viết của bạn</string>
+    <string name="MH20_005">Khuyễn mãi mới từ</string>
+    <string name="MH20_006">Chia sẻ bài đăng của bạn</string>
+    <string name="MH21_001">Menu</string>
+    <string name="MH21_002">Xem tài khoản</string>
+    <string name="MH21_003">Quản lý đơn hàng</string>
+    <string name="MH21_004">Tin tức</string>
+    <string name="MH21_005">Tìm bạn</string>
+    <string name="MH21_006">Danh bạ</string>
+    <string name="MH21_007">Thiết lập tài khoản</string>
+    <string name="MH21_008">Quản trị thông báo</string>
+    <string name="MH21_009">Xem tin tức trực tuyến</string>
+    <string name="MH21_010">Từ điển</string>
+    <string name="MH21_011">Đăng xuất</string>
+    <string name="MH21_012">Thông tin tài khoản</string>
+    <string name="MH21_013">Newsfeed</string>
+    <string name="MH22_001">Danh sách đơn hàng</string>
+    <string name="MH22_002">Theo giá</string>
+    <string name="MH22_003">Theo Thời gian</string>
+    <string name="MH22_004">Theo Chất lượng Biên/Phiên dịch</string>
+    <string name="MH22_005">Ngày tạo</string>
+    <string name="MH22_006">Giá</string>
+    <string name="MH22_007">Khu vực</string>
+    <string name="MH22_008">Ngôn ngữ</string>
+    <string name="MH22_009">Trạng thái</string>
+    <string name="MH22_010">Đang giao dịch</string>
+    <string name="MH22_011">Đang tìm kiếm</string>
+    <string name="MH22_012">Kết thúc sớm</string>
+    <string name="MH22_013">Đã hoàn thành</string>
+    <string name="MH22_014">Đã hủy</string>
+    <string name="MH22_015">Xóa</string>
+    <string name="MH22_016">Hủy</string>
+    <string name="MH23_001">Chi tiết đơn hàng</string>
+    <string name="MH23_002">Lịch sử tin nhắn</string>
+    <string name="MH23_003">Tên đơn hàng</string>
+    <string name="MH23_004">Ngôn ngữ cần phiên dịch</string>
+    <string name="MH23_005">Loại phiên dịch</string>
+    <string name="MH23_006">Địa điểm</string>
+    <string name="MH23_007">Thời gian</string>
+    <string name="MH23_008">Từ ngày</string>
+    <string name="MH23_009">Từ giờ</string>
+    <string name="MH23_010">Đến</string>
+    <string name="MH23_011">Số năm kinh nghiệm</string>
+    <string name="MH23_012">Độ tuổi</string>
+    <string name="MH23_013">Giới tính</string>
+    <string name="MH23_014">Chất lượng từ</string>
+    <string name="MH23_015">Mô tả công việc</string>
+    <string name="MH24_001">Tìm kiếm</string>
+    <string name="MH24_002">Bạn đang nghĩ gì?</string>
+    <string name="MH24_003">Thứ/ngày/tháng/năm</string>
+    <string name="MH24_004">Chụp ảnh</string>
+    <string name="MH24_005">Tải ảnh</string>
+    <string name="MH25_001">Thêm bạn</string>
+    <string name="MH25_002">Thêm bạn bằng số điện thoại</string>
+    <string name="MH25_003">Số điện thoại</string>
+    <string name="MH25_004">Thêm bạn theo địa chỉ hồ sơ</string>
+    <string name="MH25_005">Thêm bạn theo vị trí</string>
+    <string name="MH25_006">Quốc gia</string>
+    <string name="MH25_007">Thành phố</string>
+    <string name="MH25_008">địa chỉ</string>
+    <string name="MH25_009">Chọn trên bản đồ</string>
+    <string name="MH25_010">Tìm</string>
+    <string name="MH25_011">Tìm quanh đây</string>
+    <string name="MH26_001">Tìm kiếm</string>
+    <string name="MH26_002">Biên/Phiên dịch</string>
+    <string name="MH26_003">Số đơn hàng đã đặt</string>
+    <string name="MH26_004">Số đơn hàng đã hủy</string>
+    <string name="MH26_005">Thêm bạn</string>
+    <string name="MH26_006">Nhắn tin</string>
+    <string name="MH26_007">Thứ/ngày/tháng/năm</string>
+    <string name="MH27_001">Tìm kiếm</string>
+    <string name="MH27_002">Biên/Phiên dịch</string>
+    <string name="MH27_003">Số đơn hàng đã đặt</string>
+    <string name="MH27_004">Số đơn hàng đã hủy</string>
+    <string name="MH27_005">Bạn bè</string>
+    <string name="MH27_006">Bạn thân</string>
+    <string name="MH27_007">Hủy kết bạn</string>
+    <string name="MH27_008">Nhắn tin</string>
+    <string name="MH27_009">Thứ/ngày/tháng/năm</string>
+    <string name="MH27_010">Xem thêm</string>
+    <string name="MH28_001">Hủy</string>
+    <string name="MH28_002">Cập nhật trạng thái</string>
+    <string name="MH28_003">Đăng</string>
+    <string name="MH28_004">Mọi người</string>
+    <string name="MH28_005">Bạn đang nghĩ gì</string>
+    <string name="MH28_006">Ảnh/video</string>
+    <string name="MH28_007">Ghi âm</string>
+    <string name="MH28_008">địa điểm</string>
+    <string name="MH28_009">Gắn thẻ bạn bè</string>
+    <string name="MH29_001">Tin nhắn mới</string>
+    <string name="MH29_002">Tới:</string>
+    <string name="MH29_003">Tạo</string>
+    <string name="MH30_001">Giờ trước</string>
+    <string name="MH31_001">Vị trí</string>
+    <string name="MH31_002">Quốc gia</string>
+    <string name="MH31_003">Tất cả tin tức</string>
+    <string name="MH31_004">Thể loại</string>
+    <string name="MH31_005">Xã hội</string>
+    <string name="MH31_006">Chính trị</string>
+    <string name="MH31_007">Du lịch</string>
+    <string name="MH31_008">Văn hóa</string>
+    <string name="MH31_009">Tin tức liên quan</string>
+    <string name="MH33_001">Từ điển</string>
+    <string name="MH33_002">Dịch</string>
+    <string name="MH33_003">Tìm từ</string>
+    <string name="MH33_004">Ngôn ngữ</string>
+    <string name="MH35_001">Cách nhận thông báo</string>
+    <string name="MH35_002">Qua ứng dụng</string>
+    <string name="MH35_003">Qua Email</string>
+    <string name="MH35_004">Bạn nhận được thông báo nào?</string>
+    <string name="MH35_005">Về bài đăng</string>
+    <string name="MH35_006">Tin nhắn và tin nhắn trên đơn hàng</string>
+    <string name="MH35_007">Báo giá của Biên/Phiên dịch</string>
+    <string name="MH35_008">Hết hạn tìm Biên/Phiên dịch</string>
+    <string name="MH35_009">Đăng ký Biên/Phiên dịch</string>
+    <string name="MH35_010">Thông báo đơn hàng mới</string>
+    <string name="MH35_011">Lời mời kết bạn</string>
+    <string name="MH35_012">Từ bạn thân</string>
+    <string name="MH36_001">Thiết lập tài khoản</string>
+    <string name="MH36_002">Hoạt động của bạn</string>
+    <string name="MH36_003">Ai có thể xem bài viết của bạn?</string>
+    <string name="MH36_004">Cách mọi người liên hệ với bạn</string>
+    <string name="MH36_005">Ai có thể gửi lời mời kết bạn tới bạn?</string>
+    <string name="MH36_006">Ai có thể xem danh sách bạn bè của bạn</string>
+    <string name="MH36_007">Ai có thể tìm kiếm theo số điện thoại của bạn?</string>
+    <string name="MH36_008">Ai có thể tìm kiếm theo email của bạn?</string>
+    <string name="MH36_009">Ai có thể tìm kiếm theo vị trí của bạn?</string>
+    <string name="MH37_001">Cuộn camera</string>
+    <string name="MH37_002">Hủy</string>
+    <string name="MH37_003">Xong</string>
+    <string name="MH38_001">Cuộn camera</string>
+    <string name="MH39_001">Xem bài viết</string>
+    <string name="MH39_002">Đã bình luận về bài viết của bạn</string>
+    <string name="MH40_001">Biên/Phiên dịch</string>
+    <string name="MH40_002">Số đơn hàng đã đặt</string>
+    <string name="MH40_003">Số đơn hàng đã hủy</string>
+    <string name="MH40_004">Xem thêm</string>
+    <string name="MH40_005">Thứ/ngày/tháng/năm</string>
+    <string name="MH41_001">Danh sách tài khoản</string>
+    <string name="MH41_002">Tuổi</string>
+    <string name="MH41_003">Nam</string>
+    <string name="MH41_004">Nữ</string>
+    <string name="MH42_001">Đơn hàng đã đặt</string>
+    <string name="MH42_002">Theo Thời gian</string>
+    <string name="MH42_003">Theo Chất lượng Biên/Phiên dịch</string>
+    <string name="MH42_004">Ngày tạo</string>
+    <string name="MH42_005">Giá</string>
+    <string name="MH42_006">Khu vực</string>
+    <string name="MH42_007">Ngôn ngữ</string>
+    <string name="MH42_008">Trạng thái</string>
+    <string name="MH42_009">Đang giao dịch</string>
+    <string name="MH42_010">Đang tìm kiếm</string>
+    <string name="MH42_011">Kết thúc sớm</string>
+    <string name="MH42_012">Đã hoàn thành</string>
+    <string name="MH42_013">Đã hủy</string>
+    <string name="MH42_014">Xóa</string>
+    <string name="MH42_015">Hủy</string>
+    <string name="MH43_001">Đơn hàng đã hủy</string>
+    <string name="MH43_002">Theo Thời gian</string>
+    <string name="MH43_003">Theo Chất lượng Biên/Phiên dịch</string>
+    <string name="MH43_004">Ngày tạo</string>
+    <string name="MH43_005">Giá</string>
+    <string name="MH43_006">Khu vực</string>
+    <string name="MH43_007">Ngôn ngữ</string>
+    <string name="MH43_008">Trạng thái</string>
+    <string name="MH43_009">Đã hủy</string>
+    <string name="MH43_010">Xóa</string>
+    <string name="MH43_011">Hủy</string>
+    <string name="MH44_001">Ghi âm</string>
+    <string name="MH44_002">Hủy</string>
+    <string name="MH44_003">Xong</string>
+    <string name="MH45_001">Quyền riêng tư</string>
+    <string name="MH45_002">Hủy</string>
+    <string name="MH45_003">Xong</string>
+    <string name="MH45_004">Mọi người</string>
+    <string name="MH45_005">Bạn bè</string>
+    <string name="MH45_006">Bạn bè ngoại trừ</string>
+    <string name="MH45_007">Bạn bè cụ thể</string>
+    <string name="MH45_008">Bạn thân</string>
+    <string name="MH45_009">Bạn của bạn bè</string>
+    <string name="MH45_010">Chỉ mình tôi</string>
+    <string name="MH46_001">Hủy</string>
+    <string name="MH46_002">Cuộn camera</string>
+    <string name="MH46_003">Xong</string>
+    <string name="MH47_001">Liên hệ</string>
+    <string name="MH47_002">Thông báo</string>
+    <string name="MH47_003">Đổi tên</string>
+    <string name="MH47_004">Tạo nhóm</string>
+    <string name="MH48_001">Tìm quanh đây</string>
+    <string name="MH48_002">Tìm bạn</string>
+    <string name="MH48_003">Nam</string>
+    <string name="MH48_004">Nữ</string>
+    <string name="MH48_005">Tuổi</string>
+    <string name="MH49_001">Cài đặt tìm quanh đây</string>
+    <string name="MH49_002">Đối tượng tìm kiếm</string>
+    <string name="MH49_003">Tất cả</string>
+    <string name="MH49_004">Độ tuổi</string>
+    <string name="MH49_005">Nam</string>
+    <string name="MH49_006">Nữ</string>
+    <string name="MH63_001">Giá</string>
+    <string name="MH63_002">Đơn vị tính</string>
+    <string name="MH63_003">Tiền tệ</string>
+    <string name="MH63_004">Gửi</string>
+    <string name="MH63_005">Hủy</string>
+    <string name="MH99_001">Sao</string>
+    <string name="MH99_002">Thái độ</string>
+    <string name="MH99_003">Giá</string>
+    <string name="MH99_004">Kỹ năng</string>
+    <string name="MH99_005">Chuyên môn</string>
+    <string name="MH99_006">Bình luận</string>
+    <string name="TB_1001">%1s buộc nhập</string>
+    <string name="TB_1002">Số điện thoại không được nhập quá 50 ký tự</string>
+    <string name="TB_1003">Số điện thoại chỉ được phép nhập số</string>
+    <string name="TB_1004">Số điện thoại hoặc mật khẩu không chính xác</string>
+    <string name="TB_1005">Email không chính xác</string>
+    <string name="TB_1006">Số điện thoại chưa được đăng ký</string>
+    <string name="TB_1007">Email chưa được đăng ký</string>
+    <string name="TB_1008">Mã OTP không chính xác</string>
+    <string name="TB_1009">Mã OTP đã quá thời gian nhập</string>
+    <string name="TB_1010">Mật khẩu phải có ít  6 ký tự</string>
+    <string name="TB_1011">Nhập lại mật khẩu không chính xác</string>
+    <string name="TB_1012">Số điện thoại này đã được đăng ký tài khoản</string>
+    <string name="TB_1013">*Mã bảo mật phải có 6 ký tự</string>
+    <string name="TB_2001">Đã gửi mã OTP</string>
+    <string name="TB_2002">Tạo tài khoản thành công</string>
+    <string name="TB_2003">Lưu thông tin thành công</string>
+    <string name="TB_2004">Bạn chưa thông tin chưa được lưu, có muốn rời đi?</string>
+    <string name="TB_2005">Thay đổi mật khẩu thành công</string>
+    <string name="TB_2010">Tài khoản của bạn đã được đăng ký, vui lòng chờ thông báo kết quả trong vòng 24h.</string>
+    <string name="TB_1014">Mật khẩu không trùng khớp</string>
+    <string name="TB_1015">Không có kết nối Internet</string>
+    <string name="TB_1016">Máy chủ có vấn đề, làm ơn thử lại sau</string>
+    <string name="TB_1017">Email này đã được đăng ký tài khoản</string>
+    <string name="MH03_006">Gửi lại mã OTP</string>
+    <string name="TB_1018">Email hoặc số điện thoại không chính xác</string>
+
+
+    <string name="MH09_026">Đăng ký translator</string>
+    <string name="MH09_027">Thông tin chưa được lưu, bạn có muốn rời đi?</string>
+    <string name="MH09_028">Bước tiếp theo</string>
+    <string name="MH09_029">Quay lại</string>
+    <string name="MH09_030">Địa chỉ</string>
+    <string name="MH09_031">Hoặc</string>
+    <string name="MH09_033">Thông tin học vấn</string>
+    <string name="MH09_034">Thêm chứng chỉ</string>
+    <string name="MH09_035">Tải lên</string>
+    <string name="MH09_036">Tệp xác minh</string>
+    <string name="MH09_037">Thông tin khác</string>
+    <string name="MH09_038">Hoàn tất</string>
+    <string name="MH09_039">Dưới 1 năm</string>
+    <string name="MH09_040">1-5 năm</string>
+    <string name="MH09_041">5 đến 10 năm</string>
+    <string name="MH09_042">Trên 10 năm</string>
+    <string name="MH09_043">Tệp tin đã được tải lên</string>
+    <string name="MH09_044">Tiếng Việt</string>
+    <string name="MH09_045">Tiếng Anh</string>
+    <string name="MH09_046">Tiếng Trung</string>
+    <string name="MH09_047">Tiếng Nhật</string>
+    <string name="MH09_048">Tiếng Pháp</string>
+    <string name="MH09_049">Tiếng Hàn</string>
+    <string name="MH09_050">Tiếng Thái</string>
+    <string name="MH09_051">Tiếng Nga</string>
+    <string name="MH09_052">Tiếng Đức</string>
+    <string name="MH09_053">Xuất sắc</string>
+    <string name="MH09_054">Giỏi</string>
+    <string name="MH09_055">Khá</string>
+    <string name="MH09_056">Trung bình khá</string>
+    <string name="MH09_057">Trung bình</string>
+    <string name="MH09_058">Giới tính và năm sinh</string>
+    <string name="MH09_059">thông tin chung</string>
+    <string name="MH09_060">địa điểm - ngôn ngữ</string>
+
+
+    <string name="MH11_028">Hoặc:</string>
+    <string name="MH11_030">Thời gian từ</string>
+    <string name="MH11_029">Mô tả thêm</string>
+    <string name="MH11_031">Thông dịch</string>
+    <string name="MH11_032">Phiên dịch</string>
+    <string name="MH11_033">Biên dịch</string>
+
+    <string name="TB_1019">Bạn phải chọn %1s</string>
+    <string name="TB_1020">Bạn phải chọn thời gian bắt đầu</string>
+    <string name="TB_1021">Bạn phải chọn thời gian kết thúc</string>
+    <string name="TB_1022">Thời gian bắt đầu phải lớn hơn ngày hiện tại</string>
+    <string name="TB_1023">Thời hạn đăng tin phải lớn hơn ngày hiện tại</string>
+    <string name="TB_1024">Thời gian kết thúc phải lớn hơn thời gian bắt đầu</string>
+    <string name="TB_1027">Tạo đơn hàng thành công</string>
+    <string name="TB_1026">Cập nhật thông tin tài khoản thành công</string>
+    <string name="MH22_017">Chất lượng TT</string>
+    <string name="MH22_018">Kết thúc</string>
+    <string name="MH22_019">Đơn hàng mới</string>
+    <string name="MH22_020">Hoàn thành</string>
+    <string name="TB_1028">OTP đã được gửi vào hòm mail của bạn</string>
+    <string name="MH22_021">Gửi báo giá</string>
+    <string name="MH63_006">Báo giá</string>
+    <string name="MH63_007">Thông tin User</string>
+    <string name="MH22_022">Bị hủy báo giá</string>
+    <string name="MH22_023">Sửa báo giá</string>
+    <string name="MH22_024">Giá tiền không hợp lệ</string>
+
+
+    <string name="MH48_008">Kết quả tìm kiếm</string>
+    <string name="MH48_009">Đã là bạn bè</string>
+    <string name="MH41_005">Danh sách bạn</string>
+    <string name="MH41_006">Tin nhắn</string>
+    <string name="MH30_002">Nhập nội dung</string>
+    <string name="MH22_025">Bạn có chắc chắn muốn Hủy đơn hàng?</string>
+    <string name="MH22_026">Lí do hủy báo giá</string>
+    <string name="MH22_027">Bạn có chắc chắc muốn kết thúc đơn hàng sớm?</string>
+    <string name="MH23_017">Không phân biệt</string>
+    <string name="MH22_028">Đã hết hạn</string>
+    <string name="MH22_029">Bạn có chắc chắn muốn xóa đơn hàng?</string>
+    <string name="MH23_018">Ngôn ngữ cần dịch</string>
+    <string name="TB_9001">Không tìm thấy phòng chat</string>
+    <string name="MH13_010">Thông tin Translator</string>
+    <string name="MH13_011">Thống kê đơn hàng</string>
+    <string name="MH13_012">Chất lượng</string>
+    <string name="MH13_013">Chứng chỉ</string>
+    <string name="MH13_014">Giới liệu sơ lược bản thân</string>
+    <string name="MH20_007">Đánh giá chung</string>
+    <string name="MH20_008">Đánh giá khác</string>
+    <string name="MH20_009">Nhận xét</string>
+    <string name="MH20_010">Chi tiết</string>
+    <string name="TB_2011">Translator đang bận</string>
+    <string name="MH05_012">Bạn đã có tài khoản?</string>
+    <string name="TB_1032">Hiện chưa tìm thấy Translator phù hợp, bạn có muốn mở rộng điều kiện tìm kiếm cho đơn hàng %1s?</string>
+    <string name="MH08_009">Translator</string>
+    <string name="MH08_008">User</string>
+    <string name="MH08_010">đã đặt</string>
+    <string name="MH08_011">đã hủy</string>
+    <string name="MH08_012">Cập nhật</string>
+    <string name="MH11_034">Xem lịch sử báo giá</string>
+    <string name="TB_2012">Mật khẩu cũ không chính xác</string>
+    <string name="MH05_013">Mật khẩu mới phải khác với mật khẩu cũ</string>
+    <string name="TB_1034">Tài khoản của bạn đã được đăng ký, vui lòng chờ thông báo kết quả trong vòng 24h.</string>
+    <string name="TB_1035">Thông tin chỉnh sửa tài khoản đã được gửi đi, vui lòng chờ thông báo kết quả trong vòng 24h.</string>
+    <string name="TB_1036">Bạn phải nhập toàn bộ thông tin cá nhân mới có thể tạo đơn hàng</string>
+    <string name="TB_1037">Yêu cầu phiên dịch của bạn đã được chấp nhận</string>
+    <string name="TB_1038">Yêu cầu phiên dịch của bạn đã bị từ chối, vui lòng kiểm tra nội dung trong email</string>
+    <string name="TB_1039">Yêu cầu cập nhật thông tin của bạn đã được chấp nhận</string>
+    <string name="TB_1040">Yêu cầu cập nhật thông tin của bạn đã bị từ chối, vui lòng kiểm tra nội dung trong email</string>
+    <string name="TB_1041">Ảnh chụp chân dung, chứng minh thư/hộ chiếu (mặt trước, mặt sau), bằng tốt nghiệp. Chứng chỉ (tất cả các chứng chỉ đã đăng ký), các giấy tờ liên quan</string>
+    <string name="TB_1033">Số điện thoại và email đã được đăng kí. Hãy thử đăng nhập!</string>
+    <string name="TB_1042">Đã hết thời gian tìm kiếm, hệ thống tự đã tự động mở rộng điều kiện tìm kiếm cho đơn hàng %1s.</string>
+    <string name="MH09_061">Danh sách tệp tin</string>
+    <string name="MH48_006">Danh sách kết quả tìm kiếm</string>
+    <string name="MH48_007">Kết bạn</string>
+    <string name="MH25_012">Tìm bạn ở gần</string>
+    <string name="MH25_013">Tìm bạn theo số điện thoại</string>
+    <string name="MH25_014">Hoặc tìm bạn theo địa điểm</string>
+    <string name="TB_1043">Bạn phải chọn số điện thoại hoặc địa điểm</string>
+    <string name="MH41_007">%1d bạn chung</string>
+    <string name="MH49_007">Cài đặt đối tượng tìm kiếm</string>
+    <string name="MH18_005">Tin nhắn riêng</string>
+    <string name="MH18_006">Nhóm chat</string>
+    <string name="MH18_007">Liên lạc gần đây</string>
+    <string name="TB_1044">Tài khoản đang chờ phê duyệt translator, không thể cập nhật thông tin</string>
+    <string name="TB_1045">Thông báo: Đơn hàng mới %s</string>
+    <string name="TB_1046">Thông báo: Đơn hàng được giao dịch %s</string>
+    <string name="TB_1047">Thông báo: Đơn hàng đã bị từ chối %s</string>
+    <string name="TB_1048">Thông báo:</string>
+    <string name="TB_1049">%s đã báo giá cho đơn hàng %s</string>
+    <string name="TB_1050">%s đã nhắn tin trên đơn hàng %s</string>
+    <string name="TB_1051">Thông báo: Đơn hàng %s đã bị hủy với lí do: %s</string>
+    <string name="MH20_011">Đánh giá user</string>
+    <string name="MH20_012">Đánh giá translator</string>
+    <string name="MH30_003">Vừa xong</string>
+    <string name="TB_2099">Chỉ được cập nhật sau khi yêu cầu trước đó đã được phê duyệt</string>
+    <string name="TB_1052">Cập nhật ảnh đại diện thành công</string>
+    <string name="MH18_008">Bạn:</string>
+    <string name="TB_1053">Đã xảy ra lỗi vui lòng thử lại sau</string>
+    <string name="MH47_005">Thông báo hội thoại</string>
+    <string name="MH47_006">Tắt thông báo hội thoại</string>
+    <string name="MH47_007">Trang cá nhân</string>
+    <string name="MH47_008">Tạo nhóm chat</string>
+    <string name="MH47_010">Bạn đã tắt thông báo hội thoại</string>
+    <string name="MH47_009">Bạn đã bật thông báo hội thoại</string>
+    <string name="MH47_011">Rời nhóm chat</string>
+    <string name="MH47_012">Thành viên nhóm chat</string>
+    <string name="MH47_013">Thêm bạn vào nhóm chat</string>
+    <string name="TB_1054">đã rời khỏi nhóm</string>
+    <string name="TB_1055">đã bị mời khỏi nhóm</string>
+    <string name="TB_1056">đã tạo nhóm chat</string>
+    <string name="TB_1057">Đổi tên nhóm chat thành công</string>
+    <string name="TB_1058">Nhóm chat cần thêm ít nhất 2 người</string>
+    <string name="MH47_014">Thêm vào nhóm chat</string>
+    <string name="TB_1059">%1s đã được thêm vào nhóm chat</string>
+    <string name="TB_1060">Đã gửi lời mời</string>
+    <string name="TB_1061">%1s đã nhắn tin cho bạn</string>
+    <string name="TB_1062">%1s muốn kết bạn với bạn</string>
+    <string name="MH28_010">Viết gì đó ...</string>
+    <string name="TB_1063">Bạn chỉ được chọn tối đa 9 ảnh</string>
+    <string name="MH28_012">Chia sẻ qua facebook</string>
+    <string name="MH28_013">Chia sẻ qua Zalo</string>
+    <string name="MH28_014">Lưu file ảnh</string>
+    <string name="MH28_015">Quay video</string>
+    <string name="MH28_016">Chọn video có sẵn</string>
+    <string name="MH28_017">Chỉnh sửa</string>
+    <string name="TB_1064">Bạn chỉ được đăng ảnh, tệp ghi âm hoặc video</string>
+    <string name="TB_1065">Bạn thực sự muốn xoá bài viết này?</string>
+    <string name="MH28_018">Chỉnh sửa bài viết</string>
+    <string name="TB_1066">Bạn có thực sự muốn xóa %1s khỏi danh sách bạn bè</string>
+    <string name="TB_1068">%1s đã thích bài viết của bạn</string>
+    <string name="TB_1076">%1s đã bình luận trên bài viết của anh ấy</string>
+    <string name="TB_1077">%1s đã bình luận trên bài viết của bạn</string>
+    <string name="TB_1078">%s đã bình luận trên bài viết của %s</string>
+    <string name="TB_1067">Ảnh bạn vừa chọn không thể tải lên, vui lòng chọn ảnh khác</string>
+    <string name="MH45_011">Chỉnh sửa quyền riêng tư</string>
+    <string name="TB_1069">Bạn đã sửa quyền riêng tư cho bài viết</string>
+    <string name="TB_1070">Bạn có chắc chắn muốn xóa hội thoại này?</string>
+    <string name="TB_1071">%s đã đổi tên nhóm chat thành %s</string>
+    <string name="MH35_013">Các thông báo được nhận</string>
+    <string name="MH35_014">Tin nhắn/Tin nhắn đơn hàng</string>
+    <string name="MH35_015">Báo giá của translator</string>
+    <string name="MH35_016">Hết hạn tìm translator</string>
+    <string name="MH35_017">Đăng ký translator</string>
+    <string name="MH35_018">Thiết lập</string>
+    <string name="TB_1072">Bạn chỉ được tải lên video có độ dài tối đa 30 giây</string>
+    <string name="MH78_001">Xem ảnh</string>
+    <string name="MH78_002">Đánh dấu bạn thân</string>
+    <string name="MH78_003">Hủy bạn thân</string>
+    <string name="TB_1073">Đánh dấu bạn thân thành công</string>
+    <string name="TB_1074">Hủy bạn thân thành công</string>
+    <string name="TB_1075">Xóa bạn bè thành công</string>
+    <string name="MH36_010">Bảo mật</string>
+    <string name="TB_1079">Thay đổi quyền riêng tư bài viết thành công</string>
+    <string name="TB_1080">QR Code không hợp lệ</string>
+    <string name="TB_1081">%1s đã tạo một bài đăng mới</string>
+    <string name="TB_1082">User và Translator không thể kết bạn</string>
+    <string name="TB_1083">Bạn không có quyền xem bài đăng này</string>
+    <string name="TB_1084">Có lỗi khi lấy thông tin user, bạn có muốn tải lại?</string>
+    <string name="MH10_036">Quét mã QR code</string>
+    <string name="TB_1086">Ngôn ngữ phiên dịch đã bị trùng</string>
+    <string name="TB_2014">Tài khoản của bạn đã bị khóa</string>
+    <string name="MH10_032">Mật khẩu hiện tại</string>
+    <string name="MH10_033">Mật khẩu mới</string>
+    <string name="MH10_034">Nhập lại mật khẩu mới</string>
+    <string name="MH10_035">Xác nhận</string>
+    <string name="MH12_010">Chat</string>
+    <string name="MH23_016">Xem trên bản đồ</string>
+    <string name="MH28_011">Trạng thái mới</string>
+    <string name="TB_1025">Mật khẩu cũ và mới không được trùng nhau</string>
+    <string name="TB_1029">Chứng minh thư/Hộ chiếu chỉ được phép nhập số</string>
+    <string name="TB_1030">Bạn phải chọn thời hạn đăng tin</string>
+    <string name="TB_1031">Giá không hợp lệ</string>
+    <string name="TB_1085">Nhấn giữ trên bản đồ vị trí mà bạn muốn thay đổi</string>
+    <string name="TB_2013">Tài khoản của bạn đang chờ phê duyệt thành phiên dịch viên, vui lòng không cập nhật thông tin.</string>
+    <string name="MH03_005">Kích hoạt tài khoản</string>
+    <string name="MH07_005">Xác nhận</string>
+    <string name="MH07_006">Gửi lại mã OTP</string>
 </resources>
